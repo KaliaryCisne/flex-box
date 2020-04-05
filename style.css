@@ -1,0 +1,89 @@
+#content-amarelo {
+    background: #6b5b95;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-direction: row; /* row, row-reverse, column, column-reverse */
+    border-radius: 8px;
+    flex-wrap: nowrap; /* Define se os itens devem quebrar ou não a linha.*/
+    justify-content: flex-end;
+    align-items: stretch; /*Valor padrão, faz com que os flex itens cresçam igualmente */
+}
+
+.item-amarelo {
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    /*height: 100px;*/
+    width: 100px;
+    -webkit-box-shadow: 0px 2px 8px -1px rgba(0, 0, 0, 0.24);
+    background: #ff7b25;
+    margin: 5px;
+    padding: 5px;
+}
+
+#content-verde {
+    margin-top: 10px;
+    background: #6b5b95;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: row; /* row, row-reverse, column, column-reverse */
+    border-radius: 8px;
+    flex-wrap: nowrap; /* Define se os itens devem quebrar ou não a linha.*/
+    justify-content: center;
+    align-items: center;
+}
+
+.item-verde {
+    flex-grow: 0;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    height: 100px;
+    width: 100px;
+    -webkit-box-shadow: 0px 2px 8px -1px rgba(0, 0, 0, 0.24);
+    background: #86af49;
+    margin: 5px;
+    padding: 5px;
+}
+
+/*É possível ordenar itens da seguinte forma */
+.item-verde:nth-child(1) {
+    order: 3;
+}
+
+.item-verde:nth-child(3) {
+    order: 1;
+    flex-grow: 1;
+}
+
+.item-verde:nth-child(2) {
+    order: 2;
+    flex-grow: 1;
+}
+
+#content-rosa {
+    margin-top: 10px;
+    background: #d64161;
+    width: 600px;
+    height: 800px;
+    display: flex;
+    flex-direction: column-reverse; /* row, row-reverse, column, column-reverse */
+    border-radius: 8px;
+    flex-wrap: nowrap; /* Define se os itens devem quebrar ou não a linha.*/
+    justify-content: center; /*Alinha no eixo do container(flex-direction)  flex-start, flex-end, center, space-between, space-around*/
+    align-items: center; /* */
+}
+
+.item-rosa {
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    height: 100px;
+    width: 100px;
+    -webkit-box-shadow: 0px 2px 8px -1px rgba(0, 0, 0, 0.24);
+    background: #034f84;
+    margin: 5px;
+    padding: 5px;
+}
